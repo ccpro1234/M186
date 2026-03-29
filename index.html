@@ -398,12 +398,12 @@ canvas{
 
 <div id="expireOverlay">
  <h1>โปรแกรมหมดอายุ</h1>
- <p>หมดอายุการใช้งาน<br>  3 เมษายน พ.ศ 2569>
+ <p>หมดอายุการใช้งาน<br>  2 เมษายน พ.ศ 2569>
 </div>
 
 <!-- 🔹 แสดงวันหมดอายุด้านบน หลัง Login -->
 <div id="expiryBar">
- วันหมดอายุโปรแกรม : วันที่ 3 เมษายน พ.ศ. 2569
+ วันหมดอายุโปรแกรม : วันที่ 2 เมษายน พ.ศ. 2569
 </div>
 
 <div class="top">
@@ -449,7 +449,7 @@ function doLogin(){
 
 <script>
 (function(){
- const EXPIRE_AT = new Date(2026,3,03,0,0,0);
+ const EXPIRE_AT = new Date(2026,3,02,0,0,0);
  if(new Date() >= EXPIRE_AT){
   document.getElementById("expireOverlay").style.display="flex";
   document.querySelectorAll("button").forEach(b=>b.disabled=true);
